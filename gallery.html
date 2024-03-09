@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-section">
+          <a class="active" href="homepage.html">Home</a>
+          <a href="pricelist.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact_us.html">Contact Us</a>
+          <a href="https://www.google.com/search?q=hollywood+nails+monroe+nc&sca_esv=dcfe5edb8f188ebf&ei=p5fXZfnwL8rJp84P4Km92As&ved=0ahUKEwi54M_uzr-EAxXK5MkDHeBUD7sQ4dUDCBA&uact=5&oq=hollywood+nails+monroe+nc&gs_lp=Egxnd3Mtd2l6LXNlcnAiGWhvbGx5d29vZCBuYWlscyBtb25yb2UgbmMyCxAuGIAEGMcBGK8BMgIQJjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyGhAuGIAEGMcBGK8BGJcFGNwEGN4EGOAE2AEBSMYOULEDWLEDcAJ4AJABAJgBnAKgAZwCqgEDMi0xuAEDyAEA-AEBiAYBugYGCAEQARgU&sclient=gws-wiz-serp">Get Directions <i class="fas fa-map-marker-alt"></i></a>
+        </div>
+        <div class="right-section">
+        <h3>HOLLYWOOD NAILS AT MONROE</h3>
+        </div>
+    </div>
+    <h1>Gallery</h1>
+    <h3 class="h3text">Browse a selection of nail designs for your next visit!</h3>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="nail1.jpg" alt="nail designs">
+            <img src="nail2.jpg" alt="nail designs">
+            <img src="nail3.jpg" alt="nail designs">
+        </div>
+        <div class="gallery-item">
+            <img src="nail4.jpg" alt="nail designs">
+            <img src="nail5.jpg" alt="nail designs">
+            <img src="nail6.jpg" alt="nail designs">
+        </div>
+        <div class="gallery-item">
+            <img src="nail7.jpg" alt="nail designs">
+            <img src="nail8.jpg" alt="nail designs">
+            <img src="nail9.jpg" alt="nail designs">
+        </div>
+        <div class="gallery-item">
+            <img src="nail10.jpg" alt="nail designs">
+            <img src="nail11.jpg" alt="nail designs">
+            <img src="nail12.jpg" alt="nail designs">
+        </div>
+        <div class="gallery-item">
+            <img src="nail13.jpg" alt="nail designs">
+            <img src="nail14.jpg" alt="nail designs">
+            <img src="nail15.jpg" alt="nail designs">
+        </div>
+        <div class="gallery-item">
+            <img src="nail16.jpg" alt="nail designs">
+            <img src="nail17.jpg" alt="nail designs">
+            <img src="nail18.jpg" alt="nail designs">
+        </div>
+        <div class="gallery-item">
+            <img src="nail19.jpg" alt="nail designs">
+            <img src="nail20.jpg" alt="nail designs">
+            <img src="nail21.jpg" alt="nail designs">
+        </div>
+        <div class="gallery-item">
+            <img src="nail22.jpg" alt="nail designs">
+            <img src="nail23.jpg" alt="nail designs">
+            <img src="nail24.jpg" alt="nail designs">
+        </div>
+        <div class="gallery-item">
+            <img src="nail25.jpg" alt="nail designs">
+            <img src="nail26.jpg" alt="nail designs">
+            <img src="nail27.jpg" alt="nail designs">
+        </div>
+        </div>
+    </div>
+    <br>
+    <div class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" src="" alt="">
+    </div>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll To Top</button>
+    <div class="line"></div>
+    <script src="script.js" defer></script>
+
+    </body>
+
+    <footer>
+        <div class="leftFooter">
+            <div class="leftFooterContent">
+                <div class="leftContent">
+                    <p><b>GET IN TOUCH</b></p>
+                    <p>Here are the best ways to reach us!</p>
+                    <p>We look forward to meeting you!</p>
+                </div>
+                <div class="icons">
+                    <a href="https://www.facebook.com/hollywoodnailsmonroe/"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:hollywoodnailsmonroe@gmail.com"><i class="far fa-envelope"></i></a>
+                    <a href="tel:+7042519258"><i class="fas fa-phone"></i></a>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="rightFooter">
+            <div class="rightFooterContent">
+                <p><b>Call Us!</b></p>
+                <p>(704)-251-9258</p>
+                <p><b>Location</b></p>
+                <p>2115 W Roosevelt Blvd Monroe, NC 28110</p>
+                <p><b>Hours Of Operation</b></p>
+                <p>Mon-Sat .... 11AM - 7PM</p>
+                <p>Sun ............ 1PM - 6PM</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- I cannot move this script into its own js file, if I do it no longer works -->
+    <script>
+        const galleryItems = document.querySelectorAll('.gallery-item img');
+        const lightbox = document.querySelector('.lightbox');
+        const lightboxImg = document.querySelector('.lightbox-content');
+    
+        galleryItems.forEach(img => {
+            img.addEventListener('click', () => {
+                // Set lightbox image source to clicked image source
+                lightboxImg.src = img.src;
+                // Display the lightbox
+                lightbox.style.display = 'block';
+            });
+        });
+    
+        // Close the lightbox when clicking on close button
+        document.querySelector('.close').addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+    
+        // Close the lightbox when clicking outside of it
+        window.addEventListener('click', (event) => {
+            if (event.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+    
+    </script>
+    
+</html>

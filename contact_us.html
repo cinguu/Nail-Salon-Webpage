@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-section">
+          <a class="active" href="homepage.html">Home</a>
+          <a href="pricelist.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact_us.html">Contact Us</a>
+          <a href="https://www.google.com/search?q=hollywood+nails+monroe+nc&sca_esv=dcfe5edb8f188ebf&ei=p5fXZfnwL8rJp84P4Km92As&ved=0ahUKEwi54M_uzr-EAxXK5MkDHeBUD7sQ4dUDCBA&uact=5&oq=hollywood+nails+monroe+nc&gs_lp=Egxnd3Mtd2l6LXNlcnAiGWhvbGx5d29vZCBuYWlscyBtb25yb2UgbmMyCxAuGIAEGMcBGK8BMgIQJjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyGhAuGIAEGMcBGK8BGJcFGNwEGN4EGOAE2AEBSMYOULEDWLEDcAJ4AJABAJgBnAKgAZwCqgEDMi0xuAEDyAEA-AEBiAYBugYGCAEQARgU&sclient=gws-wiz-serp">Get Directions <i class="fas fa-map-marker-alt"></i></a>
+        </div>
+        <div class="right-section">
+        <h3>HOLLYWOOD NAILS AT MONROE</h3>
+        </div>
+    </div>
+
+    <h1>Contact Us</h1>
+
+    <form action="/submit_form.php" method="POST" style="float: left; margin-left: 50px;">
+        <h2>Schedule an appointment!</h2>
+        <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+        <label for="party_size">Party Size:</label><br>
+            <input type="number" id="party_size" name="party_size" min="1" required><br><br>
+
+        <label for="date_time">Date and Time:</label><br>
+            <input type="datetime-local" id="date_time" name="date_time" required><br><br>
+
+        <label for="options">Services:</label><br>
+            <input type="checkbox" id="fullset" name="options[]" value="fullset">
+            <label for="fullset">Fullset</label><br>
+                <input type="checkbox" id="fillin" name="options[]" value="fillin">
+            <label for="fillin">Fill-in</label><br>
+                <input type="checkbox" id="gel_manicure" name="options[]" value="gel_manicure">
+            <label for="gel_manicure">Gel Manicure</label><br>
+                <input type="checkbox" id="SNS" name="options[]" value="SNS">
+            <label for="SNS">SNS Powder</label><br>
+                <input type="checkbox" id="color_change_nails" name="options[]" value="color_change_nails">
+            <label for="color_change_nails">Color Change Nails</label><br>
+                <input type="checkbox" id="pedicure" name="options[]" value="pedicure">
+            <label for="pedicure">Pedicure</label><br>
+                <input type="checkbox" id="deluxe_pedi" name="options[]" value="deluxe_pedi">
+            <label for="deluxe_pedi">Deluxe Pedicure</label><br>
+                <input type="checkbox" id="jelly_pedi" name="options[]" value="jelly_pedi">
+            <label for="jelly_pedi">Jelly Pedicure</label><br>
+                <input type="checkbox" id="color_change_feet" name="options[]" value="color_change_feet">
+            <label for="color_change_feet">Color Change Feet</label><br>
+                <input type="checkbox" id="waxing" name="options[]" value="waxing">
+            <label for="waxing">Waxing</label><br><br>
+        </div>   
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="10" cols="40" placeholder="Let us know anything else!" required></textarea><br>
+    
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <br><br><br><br>
+
+    <div class="contact-info-container">
+        <div class="hours" style="float: right; margin-left: 10px;">
+            <h2>Hours of Operation</h2>
+            <p>Monday: 11AM - 7PM</p>
+            <p>Tuesday: 11AM - 7PM</p>
+            <p>Wednesday: 11AM - 7PM</p>
+            <p>Thursday: 11AM - 7PM</p>
+            <p>Friday: 11AM - 7PM</p>
+            <p>Saturday: 11AM - 7PM</p>
+            <p>Sunday: 1PM - 6PM</p>
+        </div>
+
+        <div class="contact_info" style="float: right; margin-left: 10px;">
+            <h2>Address:</h2>
+            <p>2115 W Roosevelt Blvd Monroe, NC 28110</p>
+            <h2>Phone:</h2>
+            <p>(704)-251-9258</p>
+            <h2>Facebook:</h2>
+            <a href="https://www.facebook.com/hollywoodnailsmonroe/" target="_blank">Click here to visit our Facebook page</a>
+            <br><br><br>
+            <img src="location.jpg" alt="map" width="400px">
+            <p>We are located in the Monroe Mall right next to Belk! Right off of 74.</p>
+        </div>
+    </div>
+    
+    <div class="clear"></div>
+</body>
+<div class="line"></div>
+    <footer>
+        <div class="leftFooter">
+            <div class="leftFooterContent">
+                <div class="leftContent">
+                    <p><b>GET IN TOUCH</b></p>
+                    <p>Here are the best ways to reach us!</p>
+                    <p>We look forward to meeting you!</p>
+                </div>
+                <div class="icons">
+                    <a href="https://www.facebook.com/hollywoodnailsmonroe/"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:hollywoodnailsmonroe@gmail.com"><i class="far fa-envelope"></i></a>
+                    <a href="tel:+7042519258"><i class="fas fa-phone"></i></a>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="rightFooter">
+            <div class="rightFooterContent">
+                <p><b>Call Us!</b></p>
+                <p>(704)-251-9258</p>
+                <p><b>Location</b></p>
+                <p>2115 W Roosevelt Blvd Monroe, NC 28110</p>
+                <p><b>Hours Of Operation</b></p>
+                <p>Mon-Sat .... 11AM - 7PM</p>
+                <p>Sun ............ 1PM - 6PM</p>
+            </div>
+        </div>
+    </footer>
+</html
